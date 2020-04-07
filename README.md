@@ -2,6 +2,10 @@
 
 The mobile implementation of OmniStack course.
 
+## First steps
+
+After clonning the repository run `npm install` to download Node packages.
+
 ### Run instructions for iOS:
 
     • cd "C:\OmniStack\mobile-omnistack\tindev" && npx react-native run-ios
