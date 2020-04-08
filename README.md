@@ -6,14 +6,23 @@ The mobile implementation of OmniStack course.
 
 After clonning the repository run `npm install` to download Node packages.
 
-### Run instructions for iOS:
+### Running the app
 
-    • cd "C:\OmniStack\mobile-omnistack\tindev" && npx react-native run-ios
-    - or -
-    • Open tindev\ios\tindev.xcodeproj in Xcode or run "xed -b ios"
-    • Hit the Run button
+- Start your emulator or connect your device
+- Run the following commands based on the target device:
+    - iOS: `yarn ios`
+    - Android: `yarn android`
 
-### Run instructions for Android:
+NOTE: for more details look `package.json`
 
-    • Have an Android emulator running (quickest way to get started), or a device connected.
-    • cd "C:\OmniStack\mobile-omnistack\tindev" && npx react-native run-android
+### Device shortcuts
+
+Android
+
+- Double tap `R` to reload code on device
+- `Ctrl + M` or shake to open React Native debug menu
+
+iOS
+
+- `Cmd + R` to reload code on device
+- `Cmd + D` or shake to open React Native debug menu
