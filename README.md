@@ -33,3 +33,7 @@ iOS
 #### Debug
 
 In order to open debug, just open **React Native debug menu** and click **debug**. A Window will open on your browser to debug.
+
+## Important notes
+
+- In order to run Android emulator pointing to our local machine, just run `adb reverse tcp:3333 tcp:3333` that means, connect the device tcp _port_ to our development machine _port_.

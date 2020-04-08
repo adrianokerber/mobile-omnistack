@@ -9,6 +9,7 @@ import logo from '../assets/logo.png';
 export default function Login({ navigation }) {
     const [user, setUser] = useState('');
 
+    // Once the user restarts the application the effect runs and goes directly to Main page
     useEffect(() => {
         AsyncStorage.getItem('user').then(user => {
             if (user) {
