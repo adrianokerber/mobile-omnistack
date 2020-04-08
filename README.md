@@ -9,11 +9,14 @@ After clonning the repository run `npm install` to download Node packages.
 ### Running the app
 
 - Start your emulator or connect your device
-- Run the following commands based on the target device:
+- Run one of the commands to build/rebuild and deploy an app version to the device
     - iOS: `yarn ios`
     - Android: `yarn android`
+- Run `yarn start` to start the debug without recompiling all the application for your device.
 
-NOTE: for more details look `package.json`
+If you install a new dependency, you must rebuild the project on iOS using `pod install` and running `yarn ios` to deploy again. On Android you just need to run `yarn android`
+
+NOTE: for more details look on `package.json`
 
 ### Device shortcuts
 
@@ -26,3 +29,7 @@ iOS
 
 - `Cmd + R` to reload code on device
 - `Cmd + D` or shake to open React Native debug menu
+
+#### Debug
+
+In order to open debug, just open **React Native debug menu** and click **debug**. A Window will open on your browser to debug.
