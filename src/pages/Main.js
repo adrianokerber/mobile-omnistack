@@ -52,13 +52,18 @@ export default function Main({ navigation }) {
             <Image style={styles.logo} source={logo} />
 
             <View style={styles.cardsContainer}>
-                <View style={[styles.card, { zIndex: 3 }]}>
-                    <Image style={styles.avatar} source={{uri: 'https://avatars3.githubusercontent.com/u/8448249?v=4'}} />
-                    <View style={styles.footer}>
-                        <Text style={styles.name}>Adriano Kerber</Text>
-                        <Text style={styles.bio} numberOfLines={3}>Affictionated by technology and games, always looking for new ways of coding.</Text>
-                    </View>
-                </View>
+                { users.length === 0
+                    ? <Text style={styles.empty}>Acabou :(</Text>
+                    : (users.map((user, index) => (
+                        <View key={user._id} style={[styles.card, { zIndex: users.length - index }]}>
+                            <Image style={styles.avatar} source={{ uri: user.avatar }} />
+                            <View style={styles.footer}>
+                                <Text style={styles.name}>{user.name}</Text>
+                                <Text style={styles.bio} numberOfLines={3}>{user.bio}</Text>
+                            </View>
+                        </View>
+                    )))
+                }
             </View>
 
             <View style={styles.buttonsContainer}>
@@ -83,6 +88,13 @@ const styles = StyleSheet.create({
 
     logo: {
         marginTop: 30
+    },
+
+    empty: {
+        alignSelf: 'center',
+        color: '#999',
+        fontSize: 24,
+        fontWeight: 'bold'
     },
 
     cardsContainer: {
