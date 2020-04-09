@@ -36,4 +36,4 @@ In order to open debug, just open **React Native debug menu** and click **debug*
 
 ## Important notes
 
-- In order to run Android emulator pointing to our local machine, just run `adb reverse tcp:3333 tcp:3333` that means, connect the device tcp _port_ to our development machine _port_.
+- In order to run Android emulator pointing to our local machine, just run `adb reverse tcp:3333 tcp:3333` that means, connect the device tcp _port_ to our development machine _port_. See more details on [documentation](https://developer.android.com/studio/command-line/adb#forwardports);
