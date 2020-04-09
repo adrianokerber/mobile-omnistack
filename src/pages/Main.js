@@ -12,8 +12,6 @@ export default function Main({ navigation }) {
     const id = navigation.getParam('user');
     const [users, setUsers] = useState([]);
 
-    console.log(id);
-
     useEffect(() => {
         async function loadUsers() {
             const response = await api.get('/devs', {
