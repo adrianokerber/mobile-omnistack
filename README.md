@@ -4,7 +4,7 @@ The mobile implementation of OmniStack course.
 
 ## First steps
 
-After clonning the repository run `npm install` to download Node packages.
+After clonning the repository run `yarn` or `yarn install` to download Node packages.
 
 ### Running the app
 
