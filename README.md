@@ -2,6 +2,8 @@
 
 The mobile implementation of OmniStack course.
 
+See more details in the [main repository](https://github.com/adrianokerber/omnistack).
+
 ## First steps
 
 After clonning the repository run `yarn` or `yarn install` to download Node packages.
