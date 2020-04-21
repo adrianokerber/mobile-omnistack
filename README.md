@@ -6,6 +6,8 @@ The mobile implementation of OmniStack course.
 
 After clonning the repository run `yarn` or `yarn install` to download Node packages.
 
+Make sure you have **Java 8** or above installed.
+
 ### Running the app
 
 - Start your emulator or connect your device
@@ -34,7 +36,7 @@ iOS
 
 In order to open debug, just open **React Native debug menu** and click **debug**. A Window will open on your browser to debug.
 
-## Important tips
+## Debugging tips
 
 Running on an emulator can be tricky, so read the following tips.
 
