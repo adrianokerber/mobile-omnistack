@@ -6,7 +6,7 @@ The mobile implementation of OmniStack course.
 
 After clonning the repository run `yarn` or `yarn install` to download Node packages.
 
-Make sure you have **Java 8** or above installed.
+**WARNING**: Make sure you have [Java 8](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html) installed. And point `JAVA_HOME` environment variable to it. Download [here](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html) or [here](https://jdk.java.net/java-se-ri/8-MR3)
 
 ### Running the app
 
